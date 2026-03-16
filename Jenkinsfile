@@ -18,13 +18,13 @@ pipeline {
 
         stage('Build Image') {
             steps {
-                sh 'docker build -t Assimela7/python-app:latest .'
+                sh 'docker build -t assimeb/python-app:latest .'
             }
         }
 
         stage('DockerHub') {
             steps {
-                sh 'docker push Assimela7/python-app:latest'
+                sh 'docker push assimeb/python-app:latest'
             }
         }
 
